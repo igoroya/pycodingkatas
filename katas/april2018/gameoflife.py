@@ -99,7 +99,7 @@ class World:
             grid_row_size = 2
             grid_row_start = row
 
-        #FIXME: Border conditions are not OK
+        #FIXME: Border conditions are probably not OK
         if row is height - 1:
             grid_row_size = 2
             grid_row_start = row - 2
@@ -108,8 +108,6 @@ class World:
             grid_column_size = 2
             grid_column_start = column - 2 
         
-
-
         for i in range(grid_row_start, grid_row_start + grid_row_size):
             for j in range(grid_column_start, grid_column_start + grid_column_size):
                 if (i is row) and (j is column):
@@ -152,7 +150,6 @@ def get_richsp18_seed_pattern():
         
 if __name__ == '__main__':
     world = World(200, 55)
-
 
     world.put_pattern_at(get_glider_seed_pattern(), 4, 1)    
     world.put_pattern_at(get_glider_seed_pattern(), 10, 3)    
