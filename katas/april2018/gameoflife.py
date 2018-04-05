@@ -74,12 +74,7 @@ class World:
 
         width_p = len(pattern)
         heighth_p= len(pattern[0])
-        
-        #if (with_p >= len(self.__grid)) - x or (heighth_p >= len(self.__grid[0]) - y):
-        #    print("CANNOT ADD")
-        #    return #TODO: raise exception?
-        
-        
+               
         for i in range(0, width_p):
             for j in range(0, heighth_p):
                 self.__grid[column+i][row+j] = pattern[i][j]
