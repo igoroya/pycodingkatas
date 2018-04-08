@@ -149,7 +149,7 @@ def get_richsp18_seed_pattern():
     return pattern
         
 if __name__ == '__main__':
-    world = World(200, 55)
+    world = World(100, 40)
 
     world.put_pattern_at(get_glider_seed_pattern(), 4, 1)    
     world.put_pattern_at(get_glider_seed_pattern(), 10, 3)    
